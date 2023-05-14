@@ -63,7 +63,7 @@ function Home() {
     
      const handledomain=(d)=>{
    
-   dispatch(filter(d))
+   dispatch(filter(d));
       
   
      }
@@ -76,7 +76,7 @@ function Home() {
     }
 
     const handleAdd=(item)=>{
-    dispatch(add(item))
+    dispatch(add(item));
     }
      
      
