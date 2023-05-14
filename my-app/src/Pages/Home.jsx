@@ -29,7 +29,7 @@ function Home() {
     const getdata=()=>{
             dispatch(getdatarequest())
             
-        fetch(`http://localhost:8080/posts?_page=${page.page}&_limit=20`).then((res)=>res.json()).then((res)=>{
+        fetch(`https://techle.onrender.com/posts?_page=${page.page}&_limit=20`).then((res)=>res.json()).then((res)=>{
             
         dispatch(getdatasuccess(res))
         })
@@ -56,7 +56,7 @@ function Home() {
      }
      
      const handleSearch=()=>{
-      fetch(`http://localhost:8080/posts?first_name=${first_name}&last_name=${last_name}`).then((res)=>res.json()).then((res)=>{
+      fetch(`https://techle.onrender.com/posts?first_name=${first_name}&last_name=${last_name}`).then((res)=>res.json()).then((res)=>{
            dispatch(getdatasuccess(res))
       })
      }

@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
  
 
 function Teampage() {
-    const Team= useSelector((store)=>store.data)
+    const Team= useSelector((store)=>store.data);
     const {team}=Team
 
    
